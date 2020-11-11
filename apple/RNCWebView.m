@@ -787,6 +787,10 @@ static NSDictionary* customCertificatesForHost;
                     completionHandler(NSURLSessionAuthChallengeUseCredential, useCredential);
                     return;
                 }
+                else{
+                      completionHandler(NSURLSessionAuthChallengeCancelAuthenticationChallenge, NULL);
+                      return;
+                }
             }
         }
     }
